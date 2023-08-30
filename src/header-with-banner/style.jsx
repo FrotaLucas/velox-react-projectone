@@ -13,6 +13,13 @@ const SectionContainer = styled.section`
   align-items: center;
   justify-content: left;
   padding-left: 5rem;
+
+  @media (max-width: 1024px) {
+    background-image: url('/images/produtor-rural-mobile.png');
+    justify-content: center;
+    padding-left: unset;
+    padding: 0 5rem;
+  }
 `;
 export { SectionContainer };
 
@@ -38,6 +45,7 @@ const SubTitle = styled.p`
   width: 60%;
 
   @media (max-width: 1024px) {
+    width: auto;
   }
 `;
 export { SubTitle };
@@ -53,6 +61,10 @@ const ButtonHome = styled.button`
   padding: 11px 15px;
   margin-top: 20px;
   width: 12rem;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
 `;
 
 export { ButtonHome };
