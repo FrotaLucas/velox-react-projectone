@@ -8,10 +8,14 @@ import {
   BodyContent,
   ListBenetis,
 } from './style';
-
-import jsonData from './benefitList.json';
+import jsonData from './benefitList';
 
 const Benefits = () => {
+  const [state, setState] = React.useState(null);
+  function handleClick(index) {
+    let selected = jsonData[index];
+    setState(selected);
+  }
   return (
     <SectionContainer>
       <DivContainer>
@@ -26,12 +30,21 @@ const Benefits = () => {
         <BodyContent>
           Lista de Json
           <ListBenetis>
-            {Object.values(jsonData).map((item) => (
-              <div key={item.index}> {item.index}</div>
+            {jsonData.map((item, index) => (
+              <div
+                key={index}
+                onClick={() => {
+                  handleClick(index);
+                }}
+              >
+                {item.content}
+              </div>
             ))}
           </ListBenetis>
-          <div>Hellow</div>
+          {/* <div>{Object.keys(jsonData)}</div> */}
+          <div>{state ? state.title : 'Resultado'}</div>
         </BodyContent>
+        {/*  */}
       </DivContainer>
     </SectionContainer>
   );
