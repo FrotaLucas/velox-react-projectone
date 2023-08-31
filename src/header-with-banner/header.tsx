@@ -7,7 +7,7 @@ import {
   SubTitle,
 } from './style';
 
-const Header = () => {
+const Header: React.FC = () => {
   return (
     <SectionContainer>
       <DivContainer>

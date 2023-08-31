@@ -4,15 +4,15 @@ const jsonData = [
     content: 'Competitive Rates',
   },
   {
-    title: 1,
+    title: 2,
     content: 'Production Optimization',
   },
   {
-    title: 2,
+    title: 3,
     content: 'Quick release of funds in the account',
   },
   {
-    title: 3,
+    title: 4,
     content: 'Soybeans and corn - soon other crops',
   },
 ];
