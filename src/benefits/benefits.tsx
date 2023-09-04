@@ -1,5 +1,5 @@
 import React from 'react'
-import { SectionContainer, ListBenetis, DivContainer, HeaderContent, TitleContent,SubtitleContent, BodyContent } from './style'
+import { SectionContainer, ListBenefitis, DivContainer, HeaderContent, TitleContent,SubtitleContent, BodyContent, LineContent,SquareContent } from './style'
 import {benefitList} from './benefitList';
 
 interface BenefitsInterface {
@@ -10,7 +10,7 @@ interface BenefitsInterface {
 
 const Benefits: React.FC = ()=> {
   
-const [state, useState] = React.useState<BenefitsInterface | null>(null)
+const [state, useState] = React.useState<BenefitsInterface | null>(benefitList[0])
 function handleClick(index){
   let selected = benefitList[index];
   useState(selected);
@@ -27,19 +27,23 @@ function handleClick(index){
 
             </HeaderContent>
             <BodyContent>
-              Lista Json
-              <ListBenetis>
+              <ListBenefitis>
                 {benefitList.map((item,index)=> 
-                <div key={index}>
+                <LineContent key={index}>
                  <div onClick={()=>handleClick(index)}>
                 {index+1}
                  </div>
-                
+                <div>
+                  {item.title}
                 </div>
+                </LineContent>
                 )}
-              </ListBenetis>
+              </ListBenefitis>
 
-              <div> {state ? state.content : "NADA"}</div>
+              <SquareContent> 
+                <h2>{state?.subtitle}</h2>
+                <p>{state?.content}</p>
+              </SquareContent>
             </BodyContent>
 
           </DivContainer>
