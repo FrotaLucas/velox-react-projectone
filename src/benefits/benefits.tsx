@@ -1,17 +1,19 @@
 import React from 'react'
 import { SectionContainer, ListBenetis, DivContainer, HeaderContent, TitleContent,SubtitleContent, BodyContent } from './style'
-import jsonData from './benefitList';
+import {benefitList} from './benefitList';
 
 interface BenefitsInterface {
-  title: number;
+  title: string;
+  subtitle: string;
   content: string;
 }
 
 const Benefits: React.FC = ()=> {
+  
 const [state, useState] = React.useState<BenefitsInterface | null>(null)
 function handleClick(index){
-  let selected = jsonData[index];
-  useState(selected)
+  let selected = benefitList[index];
+  useState(selected);
 }
   return <SectionContainer>
           <DivContainer>
@@ -27,7 +29,14 @@ function handleClick(index){
             <BodyContent>
               Lista Json
               <ListBenetis>
-                {jsonData.map((item,index)=> <div key={index} onClick={()=>handleClick(index)}> {item.title}</div> )}
+                {benefitList.map((item,index)=> 
+                <div key={index}>
+                 <div onClick={()=>handleClick(index)}>
+                {index+1}
+                 </div>
+                
+                </div>
+                )}
               </ListBenetis>
 
               <div> {state ? state.content : "NADA"}</div>
