@@ -32,8 +32,33 @@ const BodyContent = styled.div`
 `;
 export { BodyContent };
 
-const ListBenetis = styled.div`
+const ListBenefitis = styled.div`
   display: flex;
   flex-direction: column;
 `;
-export { ListBenetis };
+export { ListBenefitis };
+
+const LineContent = styled.div`
+  display: flex;
+  gap: 2rem;
+  min-width: 22.5rem;
+
+  @media (max-width: 1024px){
+
+  }
+`
+export {LineContent}
+
+const SquareContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #b4b8bf;
+  border-radius: 4px;
+  padding: 48px;
+  height: 20rem;
+  //width: 50%;
+
+`
+export {SquareContent}
