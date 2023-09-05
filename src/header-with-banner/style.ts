@@ -8,16 +8,12 @@ const SectionContainer = styled.section`
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-
   display: flex;
   align-items: center;
-  justify-content: left;
-  padding-left: 5rem;
 
   @media (max-width: 1024px) {
     background-image: url('/images/produtor-rural-mobile.png');
     justify-content: center;
-    padding-left: unset;
     padding: 0 5rem;
   }
 `;
@@ -26,6 +22,8 @@ export { SectionContainer };
 const DivContainer = styled.div`
   display: flex;
   flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
 `;
 
 export { DivContainer };
