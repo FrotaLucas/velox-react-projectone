@@ -37,36 +37,36 @@ const SubtitleContent = styled.h2`
 export { SubtitleContent };
 
 const BodyContent = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 5rem;
+  > div:first-child{
+    display: flex;
+    margin-bottom: 2rem;
 
+  }
   @media (max-width: 1024px) {
-  flex-direction: column;
-    
+  > div:first-child{
+    flex-direction: column;
+  }
   }
 `;
+
 export { BodyContent };
 
 const ListBenefitis = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 16rem;
+  min-height: 16rem;
   border: 1px solid black;
+
+  @media (max-width: 1024px){
+   margin-bottom: 2rem;
+  }
 `;
 export { ListBenefitis };
 
 const LineContent = styled.div`
   display: flex;
-  //flex-direction: column;
-  //justify-content: space-around;
-  gap: 2rem;
-  //min-width: 22.5rem;
-
-  @media (max-width: 1024px){
-
-  }
+  gap: 1rem;
 `
 export {LineContent}
 
@@ -78,8 +78,34 @@ const SquareContent = styled.div`
   border: 1px solid #b4b8bf;
   border-radius: 4px;
   padding: 48px;
-  height: 16rem;
+  min-height: 18rem;
   width: 50%;
 
+  @media (max-width: 1024px){
+    width: 80%;
+  }
 `
 export {SquareContent}
+
+const BenefitsButton = styled.button`
+    font-family: Moderat,sans-serif;
+    background-color: #195ab4;
+    color: #fff;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 10px;
+    line-height: 16px;
+    cursor: pointer;
+    border: none;
+    border-color: transparent;
+    border-style: solid;
+    border-radius: 4px;
+    outline: none;
+    align-items: center;
+    justify-content: center;
+    transition-property: all;
+    transition-duration: .15s;
+`
+export {BenefitsButton};
+ 
+    
