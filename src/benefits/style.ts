@@ -40,11 +40,12 @@ const BodyContent = styled.div`
   > div:first-child{
     display: flex;
     margin-bottom: 2rem;
-
+    gap: 20%
   }
   @media (max-width: 1024px) {
   > div:first-child{
     flex-direction: column;
+    gap: unset;
   }
   }
 `;
@@ -56,10 +57,11 @@ const ListBenefitis = styled.div`
   flex-direction: column;
   justify-content: space-around;
   min-height: 16rem;
-  border: 1px solid black;
 
   @media (max-width: 1024px){
    margin-bottom: 2rem;
+   flex-direction: row;
+   min-height: unset;
   }
 `;
 export { ListBenefitis };
@@ -83,6 +85,7 @@ const SquareContent = styled.div`
 
   @media (max-width: 1024px){
     width: 80%;
+    height: 25rem;
   }
 `
 export {SquareContent}
