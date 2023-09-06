@@ -52,7 +52,7 @@ const BodyContent = styled.div`
 
 export { BodyContent };
 
-const ListBenefitis = styled.div`
+const ListBenefits = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -64,7 +64,7 @@ const ListBenefitis = styled.div`
    min-height: unset;
   }
 `;
-export { ListBenefitis };
+export { ListBenefits };
 
 const LineContent = styled.div`
   display: flex;
