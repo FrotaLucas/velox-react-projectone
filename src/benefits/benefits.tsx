@@ -30,27 +30,23 @@ React.useEffect( ()=> {
   return <SectionContainer>
           <DivContainer>
             <HeaderContent>
-            <TitleContent>
-            Request and track your request in a few steps through the platform.
-          </TitleContent>
-          <SubtitleContent>
-            Check out the advantages of Velox for rural producers.
-          </SubtitleContent>
+              <TitleContent>
+                Request and track your request in a few steps through the platform.
+              </TitleContent>
+              <SubtitleContent>
+                Check out the advantages of Velox for rural producers.
+              </SubtitleContent>
 
             </HeaderContent>
             <BodyContent>
               <div>
-              <ListBenefits>
-                {benefitList.map((item,index)=> 
+                <ListBenefits>
+                  {benefitList.map((item,index)=> 
                 <LineContent key={index}>
-                 <div onClick={()=>handleClick(index)}>
-                {index+1}
-                 </div>
-                 {
-                  !isMObile &&  <div>
-                  {item.title}
-                </div>
-                 }
+                  <div onClick={()=>handleClick(index)}>
+                  {index+1}
+                  </div>
+                  {!isMObile &&  <div>{item.title}</div>}
                 </LineContent>
                 )}
               </ListBenefits>
@@ -62,7 +58,6 @@ React.useEffect( ()=> {
               {!isMObile && <BenefitsButton>Request Contact</BenefitsButton>}
             </BodyContent>
                {isMObile && <BenefitsButton>Request Contact</BenefitsButton>}
-
           </DivContainer>
         </SectionContainer>
 
