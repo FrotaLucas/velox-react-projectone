@@ -46,9 +46,11 @@ React.useEffect( ()=> {
                  <div onClick={()=>handleClick(index)}>
                 {index+1}
                  </div>
-                <div>
+                 {
+                  !isMObile &&  <div>
                   {item.title}
                 </div>
+                 }
                 </LineContent>
                 )}
               </ListBenefitis>
