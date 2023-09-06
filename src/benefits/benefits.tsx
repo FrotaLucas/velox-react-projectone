@@ -1,5 +1,5 @@
 import React from 'react'
-import { SectionContainer, ListBenefitis, DivContainer, HeaderContent, TitleContent,SubtitleContent, BodyContent, LineContent,SquareContent, BenefitsButton } from './style'
+import { SectionContainer, ListBenefits, DivContainer, HeaderContent, TitleContent,SubtitleContent, BodyContent, LineContent,SquareContent, BenefitsButton } from './style'
 import {benefitList} from './benefitList';
 
 
@@ -40,7 +40,7 @@ React.useEffect( ()=> {
             </HeaderContent>
             <BodyContent>
               <div>
-              <ListBenefitis>
+              <ListBenefits>
                 {benefitList.map((item,index)=> 
                 <LineContent key={index}>
                  <div onClick={()=>handleClick(index)}>
@@ -53,7 +53,7 @@ React.useEffect( ()=> {
                  }
                 </LineContent>
                 )}
-              </ListBenefitis>
+              </ListBenefits>
               <SquareContent> 
                 <h2>{state?.subtitle}</h2>
                 <p>{state?.content}</p>
