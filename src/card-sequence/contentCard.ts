@@ -1,7 +1,7 @@
 const cardContent = [
   {
     title: 'Request',
-    svg: 'checkmar-done',
+    svg: 'checkmark-done',
     content: 'To get started, fill out the form on this page.',
   },
   {
