@@ -39,6 +39,7 @@ React.useEffect( ()=> {
 
             </HeaderContent>
             <BodyContent>
+              <div>
               <ListBenefitis>
                 {benefitList.map((item,index)=> 
                 <LineContent key={index}>
@@ -51,14 +52,14 @@ React.useEffect( ()=> {
                 </LineContent>
                 )}
               </ListBenefitis>
-
               <SquareContent> 
                 <h2>{state?.subtitle}</h2>
                 <p>{state?.content}</p>
               </SquareContent>
-              
+              </div>
+              {!isMObile && <BenefitsButton>Request Contact</BenefitsButton>}
             </BodyContent>
-               {isMObile && <BenefitsButton>Request contact</BenefitsButton>}
+               {isMObile && <BenefitsButton>Request Contact</BenefitsButton>}
 
           </DivContainer>
         </SectionContainer>
