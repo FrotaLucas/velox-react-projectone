@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 const SectionContainer = styled.section`
   width: 100vw;
+  background-color: rgb(230, 231, 234);
   @media (max-width: 1024px) {
   }
 `;
@@ -23,3 +24,22 @@ const SubtitleContent = styled.p`
   margin-bottom: 2rem
 `;
 export { SubtitleContent };
+
+const CardRow = styled.div`
+  display: flex;
+  gap: 1rem;
+`;
+export {CardRow}
+const Card = styled.div`
+    background-color: white;
+    padding: 24px;
+    width: 200px;
+    line-height: 150%;
+`
+export {Card};
+
+const CardHead = styled.div`
+    display: flex;
+    //align-items: center;
+`
+export { CardHead}
