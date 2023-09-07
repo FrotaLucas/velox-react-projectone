@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 const SectionContainer = styled.section`
   width: 100vw;
+
   @media (max-width: 1024px) {
   }
 `;
