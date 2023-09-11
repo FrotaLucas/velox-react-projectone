@@ -8,6 +8,7 @@ const SectionContainer = styled.section`
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  width: 100vw;
   display: flex;
   align-items: center;
 
