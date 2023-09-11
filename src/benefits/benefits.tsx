@@ -16,7 +16,7 @@ function handleClick(index){
   useElement(selected);
 }
 
-const [isMObile, setIsMobile] = React.useState(window.innerWidth <= 1024)
+const[isMObile, setIsMobile] = React.useState<boolean>(window.innerWidth <= 1024)
 React.useEffect( ()=> {
   const handleResize = () => { setIsMobile(window.innerWidth <=1024)}
   window.addEventListener('resize', handleResize)
