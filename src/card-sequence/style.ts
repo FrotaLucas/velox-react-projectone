@@ -48,11 +48,7 @@ const CardRow = styled.div`
   & .slick-slide > div {
     margin-left: 1rem; /* Add margin to each slide's content */
     margin-right: 1rem;
-    //background-color: #f0f0f0; /* Background color for each slide */
-    //border: 1px solid #ddd; /* Border for each slide */
-    //padding: 2rem; /* Padding for each slide's content */
     text-align: center; /* Center-align text within each slide */
-    //box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Box shadow for each slide */
 }
   & .slick-slide > div > div {
     width: 80% !important;
@@ -65,9 +61,11 @@ const CardRow = styled.div`
 export {CardRow}
 const Card = styled.div`
     background-color: white;
-    //height: 5rem;
-    //padding: 10px;
-    //width: 200px;
+    padding: 2rem;
+
+    @media (max-width: 1024px){
+    padding: unset;
+    }
 `
 export {Card};
 
