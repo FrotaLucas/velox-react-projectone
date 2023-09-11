@@ -10,10 +10,10 @@ interface BenefitsInterface {
 }
 
 const Benefits: React.FC = ()=> {
-const [state, useState] = React.useState<BenefitsInterface | null>(benefitList[0])
+const [element, useElement] = React.useState<BenefitsInterface | null>(benefitList[0])
 function handleClick(index){
   let selected = benefitList[index];
-  useState(selected);
+  useElement(selected);
 }
 
 const [isMObile, setIsMobile] = React.useState(window.innerWidth <= 1024)
@@ -51,8 +51,8 @@ React.useEffect( ()=> {
                 )}
               </ListBenefits>
               <SquareContent> 
-                <h2>{state?.subtitle}</h2>
-                <p>{state?.content}</p>
+                <h2>{element?.subtitle}</h2>
+                <p>{element?.content}</p>
               </SquareContent>
               </div>
               {!isMObile && <BenefitsButton>Request Contact</BenefitsButton>}
