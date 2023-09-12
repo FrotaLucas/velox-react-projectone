@@ -62,6 +62,7 @@ export {CardRow}
 const Card = styled.div`
     background-color: white;
     padding: 2rem;
+    border-radius: 10px;
 
     @media (max-width: 1024px){
     padding: unset;
