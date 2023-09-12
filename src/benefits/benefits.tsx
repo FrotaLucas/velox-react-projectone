@@ -3,14 +3,14 @@ import { SectionContainer, ListBenefits, DivContainer, HeaderContent, TitleConte
 import {benefitList} from './benefitList';
 
 
-interface BenefitsInterface {
+interface BenefitProps {
   title: string;
   subtitle: string;
   content: string;
 }
 
 const Benefits: React.FC = ()=> {
-const [element, useElement] = React.useState<BenefitsInterface | null>(benefitList[0])
+const [element, useElement] = React.useState<BenefitProps | null>(benefitList[0])
 function handleClick(index){
   let selected = benefitList[index];
   useElement(selected);
