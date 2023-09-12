@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './header-with-banner/header';
 import Cards from './card-sequence/cards';
 import Benefits from './benefits/benefits';
+import Visibility from './visibility/visibility';
 
 
 const VeloxRuralFarmer = () => {
@@ -10,6 +11,7 @@ const VeloxRuralFarmer = () => {
       <Header/>
       <Cards/>
       <Benefits/>
+      <Visibility/>
     </>
   );
 };
