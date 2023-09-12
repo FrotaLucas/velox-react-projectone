@@ -83,6 +83,7 @@ export { CardHead}
 
 const CardButton = styled.button`
     margin: 2rem 0;
+    width: 10rem;
     font-family: Moderat,sans-serif;
     background-color: #195ab4;
     color: #fff;
