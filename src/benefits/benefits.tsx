@@ -26,7 +26,6 @@ React.useEffect( ()=> {
 
 }, [])
 
-
   return <SectionContainer>
           <DivContainer>
             <HeaderContent>
