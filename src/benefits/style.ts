@@ -80,7 +80,7 @@ const SquareContent = styled.div`
   justify-content: center;
   align-items: center;
   border: 1px solid #b4b8bf;
-  border-radius: 4px;
+  border-radius: 10px;
   padding: 48px;
   min-height: 18rem;
   width: 50%;
