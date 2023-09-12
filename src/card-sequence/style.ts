@@ -63,9 +63,11 @@ const Card = styled.div`
     background-color: white;
     padding: 2rem;
     border-radius: 10px;
+    width: 20%;
 
     @media (max-width: 1024px){
     padding: unset;
+    width: unset;
     }
 `
 export {Card};
