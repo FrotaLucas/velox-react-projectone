@@ -8,7 +8,7 @@ const SectionContainer = styled.section`
   @media (max-width: 1024px) {
   }`
 
-  export default SectionContainer
+  export  {SectionContainer}
 
 const DivContainer = styled.div`
   width: 80%;
@@ -16,4 +16,22 @@ const DivContainer = styled.div`
   @media (max-width: 1024px) {
   }
 `;
-export { DivContainer };
+export  {DivContainer};
+
+const InnerContainer = styled.div`
+`
+export {InnerContainer};
+
+const TitleContent = styled.h2`
+  margin: unset;
+  padding-bottom: 2rem;
+  padding-top: 5rem;
+`;
+export { TitleContent };
+
+const SubtitleContent = styled.p`
+  margin: unset;
+  padding-bottom: 2rem;
+`;
+
+export { SubtitleContent };
