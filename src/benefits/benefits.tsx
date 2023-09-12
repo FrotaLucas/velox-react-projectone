@@ -35,7 +35,6 @@ React.useEffect( ()=> {
               <SubtitleContent>
                 Check out the advantages of Velox for rural producers.
               </SubtitleContent>
-
             </HeaderContent>
             <BodyContent>
               <div>
