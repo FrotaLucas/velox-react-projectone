@@ -17,6 +17,7 @@ const DivContainer = styled.div`
 export { DivContainer };
 
 const HeaderContent = styled.div`
+  margin-top: 5rem;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -92,6 +93,7 @@ const SquareContent = styled.div`
 export {SquareContent}
 
 const BenefitsButton = styled.button`
+    margin: 2rem 0;
     font-family: Moderat,sans-serif;
     background-color: #195ab4;
     color: #fff;
