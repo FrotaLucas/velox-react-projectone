@@ -13,14 +13,19 @@ const SectionContainer = styled.section`
 const DivContainer = styled.div`
   width: 80%;
   margin: 0 auto;
+  padding: 5rem 0;
+  display: flex;
+  gap: 10%;
   @media (max-width: 1024px) {
+    flex-direction: column;
   }
 `;
 export  {DivContainer};
 
-const InnerContainer = styled.div`
+const InnerText = styled.div`
+  width: 50%;
 `
-export {InnerContainer};
+export {InnerText};
 
 const TitleContent = styled.h2`
   margin: unset;
