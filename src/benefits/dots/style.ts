@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const Item = styled.div<{toggle: boolean}>`
  background-color: ${({ toggle }) => (toggle ? 'black' : 'white')};
  color: ${({toggle})=> (toggle ? 'white' : 'black')};
- border: 2px solid black;
+ border: solid 1px #1c233b;
  width: 2rem; 
  height: 2rem;
  border-radius: 50%;
