@@ -2,14 +2,16 @@ import React from 'react'
 import { Item } from './style'
 
 interface DotProps {
-  backgroundColor: boolean;
+  DotToggle: boolean;
+  onClick: () => void;
+  children: React.ReactNode
 }
 
-const Dot: React.FC<DotProps> = ({backgroundColor}) => {
+const Dot: React.FC<DotProps> = ({DotToggle,onClick,children}) => {
 
   return (
-    <Item toggle={backgroundColor}>
-      Oiee
+    <Item toggle={DotToggle} onClick={onClick}>
+      {children}
     </Item>
 
   )
