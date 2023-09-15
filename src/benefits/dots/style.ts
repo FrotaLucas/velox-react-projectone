@@ -2,7 +2,15 @@ import styled from 'styled-components'
 
 
 const Item = styled.div<{toggle: boolean}>`
- background-color: ${({ toggle }) => (toggle ? 'red' : 'blue')};
+ background-color: ${({ toggle }) => (toggle ? 'black' : 'white')};
+ color: ${({toggle})=> (toggle ? 'white' : 'black')};
+ border: 2px solid black;
+ width: 2rem; 
+ height: 2rem;
+ border-radius: 50%;
+ display: flex;
+ align-items: center;
+ justify-content: center;   
 `;
 
 export {Item};
