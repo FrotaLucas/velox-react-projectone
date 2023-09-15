@@ -88,6 +88,8 @@ const SquareContent = styled.div`
   @media (max-width: 1024px){
     width: 80%;
     height: 25rem;
+    margin: 1rem auto;
+
   }
 `
 export {SquareContent}
