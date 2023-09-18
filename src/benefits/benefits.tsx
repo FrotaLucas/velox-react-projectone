@@ -1,5 +1,5 @@
 import React from 'react'
-import { SectionContainer, ListBenefits, DivContainer, HeaderContent, TitleContent,SubtitleContent, BodyContent, LineContent,SquareContent, BenefitsButton } from './style'
+import { SectionContainer, ListBenefits, DivContainer, HeaderContent, TitleContent,SubtitleContent, BodyContent, LineContent,SquareContent, BenefitsButton, ButtonDot } from './style'
 
 import Dot from './dots/dot';
 import {benefitList} from './benefitList';
@@ -44,9 +44,12 @@ React.useEffect( ()=> {
           <ListBenefits>
             {benefitList.map((item,index)=> 
           <LineContent key={index}>
-            <Dot DotToggle={index === benefitList.indexOf(element)} onClick={()=>handleClick(index)}>
-            {index+1}
-            </Dot>
+            <ButtonDot>
+              <Dot DotToggle={index === benefitList.indexOf(element)} onClick={()=>handleClick(index)}>
+              {index+1}
+              </Dot>
+              <span></span>
+            </ButtonDot>
             {!isMobile &&  <div>{item.title}</div>}
           </LineContent>
           )}
