@@ -39,15 +39,34 @@ const SubtitleContent = styled.h2`
 export { SubtitleContent };
 
 const BodyContent = styled.div`
-  > div:first-child{
+  > div{
     display: flex;
     margin-bottom: 2rem;
-    gap: 20%
+    gap: 20%;
+    //border: 1px solid black
+  }
+  > div > div > div:not(:last-child) span{
+    position: absolute;
+    z-index: -1;
+    background-color: #b4b8bf;
+    height: 80px;
+    width: 2px;
+    left: 15px;
+    top: 22px;
   }
   @media (max-width: 1024px) {
-  > div:first-child{
+  > div{
     flex-direction: column;
     gap: unset;
+  }
+
+  > div > div > div:not(:last-child) span{
+    position: absolute;
+    height: 2px;
+    width: 74px;
+    background-color: #b4b8bf;
+    top: 18px;
+    left: 30px;
   }
   }
 `;
@@ -73,6 +92,12 @@ const LineContent = styled.div`
   gap: 1rem;
 `
 export {LineContent}
+
+const ButtonDot = styled.div`
+  position: relative;
+  display: flex;
+`;
+export { ButtonDot };
 
 const SquareContent = styled.div`
   display: flex;
