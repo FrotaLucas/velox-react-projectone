@@ -2,7 +2,7 @@
   "name": "velox-react-projectone",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://frotalucas.github.io/velox-react-projectone/",
+  "homepage": "https://frotalucas.github.io/velox-react-projectone",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
