@@ -47,7 +47,7 @@ const Cards: React.FC = () => {
             { cardContent.map((item,index)=> 
               <Card key={index}>
                 <CardHead>
-                <img src={`./svgs/${item.svg}.svg`}/>
+                <img src={`../.././public/svgs/${item.svg}.svg`}/>
                 <h3>{item.title}</h3>
                </CardHead>
                 <p>{item.content}</p>
@@ -60,7 +60,7 @@ const Cards: React.FC = () => {
           {cardContent.map((item, index)=> 
        <Card key={index}>
         <CardHead> 
-          <img src={`./public/svgs/${item.svg}.svg`}/>
+          <img src={`../.././public/svgs/${item.svg}.svg`}/>
           <h3>{item.title}</h3>
          </CardHead>
           <p>{item.content}</p>
