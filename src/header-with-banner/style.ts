@@ -1,7 +1,9 @@
 import styled from 'styled-components';
+import desktopImage from '/images/produtor-rural-desktop.png';
+import mobileImage from '/images/produtor-rural-mobile.png';
 
 const SectionContainer = styled.section`
-  background-image: url('../../public/images/produtor-rural-desktop.png');
+  background-image: url('${desktopImage}');
   background-size: cover;
   padding-top: 48px;
   padding-bottom: 48px;
@@ -13,7 +15,7 @@ const SectionContainer = styled.section`
   align-items: center;
 
   @media (max-width: 1024px) {
-    background-image: url('../../public/images/produtor-rural-mobile.png');
+    background-image: url('${mobileImage}');
     justify-content: center;
     padding: 0 5rem;
   }
