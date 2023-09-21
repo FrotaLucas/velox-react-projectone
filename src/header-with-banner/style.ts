@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const SectionContainer = styled.section`
-  background-image: url('/images/produtor-rural-desktop.png');
+  background-image: url('../../public/images/produtor-rural-desktop.png');
   background-size: cover;
   padding-top: 48px;
   padding-bottom: 48px;
@@ -13,7 +13,7 @@ const SectionContainer = styled.section`
   align-items: center;
 
   @media (max-width: 1024px) {
-    background-image: url('/images/produtor-rural-mobile.png');
+    background-image: url('../../public/images/produtor-rural-mobile.png');
     justify-content: center;
     padding: 0 5rem;
   }
