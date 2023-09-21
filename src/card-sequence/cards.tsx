@@ -38,7 +38,7 @@ const Cards: React.FC = () => {
   return (
     <SectionContainer>
     <DivContainer>
-      <TitleContent>Service without bureaucracy!</TitleContent>
+      <TitleContent>Serviceee without bureaucracy!</TitleContent>
       <SubtitleContent>Request and track the process in a few steps through the platform.</SubtitleContent>
       {
         isMobile ?  
