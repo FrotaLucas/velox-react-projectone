@@ -8,10 +8,16 @@ import Visibility from './visibility/visibility';
 const VeloxRuralFarmer = () => {
   return (
     <>
+      <header>
+      </header>
+      <main>
       <Header/>
       <Cards/>
       <Benefits/>
       <Visibility/>
+      </main>
+      <footer>
+      </footer>
     </>
   );
 };
