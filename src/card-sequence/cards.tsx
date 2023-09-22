@@ -38,7 +38,7 @@ const Cards: React.FC = () => {
   return (
     <SectionContainer>
     <DivContainer>
-      <TitleContent>Serviceee without bureaucracy!</TitleContent>
+      <TitleContent>Service without bureaucracy!</TitleContent>
       <SubtitleContent>Request and track the process in a few steps through the platform.</SubtitleContent>
       {
         isMobile ?  
@@ -47,7 +47,7 @@ const Cards: React.FC = () => {
             { cardContent.map((item,index)=> 
               <Card key={index}>
                 <CardHead>
-                <img src={`/svgs/${item.svg}.svg`}/>
+                <img src={`svgs/${item.svg}.svg`}/>
                 <h3>{item.title}</h3>
                </CardHead>
                 <p>{item.content}</p>
